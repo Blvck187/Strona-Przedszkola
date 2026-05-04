@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przedszkole Słoneczko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌞 Przedszkole Słoneczko</h1>
+    <nav>
+        <a href="#home">Start</a>
+        <a href="#about">O nas</a>
+        <a href="#offer">Oferta</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#signup">Zapisy</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Witamy!</h2>
+    <p>Bezpieczne i radosne miejsce dla Twojego dziecka ❤️</p>
+    <button onclick="scrollToSection('signup')">Zapisz dziecko</button>
+</section>
+
+<section id="about">
+    <h2>O nas</h2>
+    <p>Dbamy o rozwój, bezpieczeństwo i uśmiech każdego dziecka 😊</p>
+</section>
+
+<section id="offer">
+    <h2>Nasza oferta</h2>
+    <div class="cards">
+        <div class="card">🎨 Plastyka</div>
+        <div class="card">🇬🇧 Angielski</div>
+        <div class="card">🎵 Rytmika</div>
+        <div class="card">⚽ Sport</div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galeria</h2>
+    <div class="gallery">
+        <img src="https://picsum.photos/300/200?1">
+        <img src="https://picsum.photos/300/200?2">
+        <img src="https://picsum.photos/300/200?3">
+        <img src="https://picsum.photos/300/200?4">
+    </div>
+</section>
+
+<section id="signup">
+    <h2>Zapisy</h2>
+    <form onsubmit="sendForm(event)">
+        <input type="text" placeholder="Imię dziecka" required>
+        <input type="number" placeholder="Wiek dziecka" required>
+        <input type="text" placeholder="Imię rodzica" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>📍 ul. Przykładowa 1</p>
+    <p>📞 123 456 789</p>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=Warsaw&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" style="border:0;">
+    </iframe>
+</section>
+
+<section id="parent">
+    <h2>Dla rodziców</h2>
+    <button onclick="togglePanel()">Pokaż informacje</button>
+    <div id="parentPanel" class="hidden">
+        <p>🕒 Godziny: 7:00 – 17:00</p>
+        <p>🍽️ Wyżywienie: 3 posiłki dziennie</p>
+        <p>📅 Plan dnia dostępny w placówce</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Przedszkole Słoneczko</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
